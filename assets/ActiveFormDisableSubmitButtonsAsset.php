@@ -16,7 +16,9 @@ class ActiveFormDisableSubmitButtonsAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $js = ['disable-submit-buttons.js',];
+    public $js = [
+        YII_ENV_DEV ? 'disable-submit-buttons.js' : 'disable-submit-buttons.min.js'
+    ];
 
     /**
      * @inheritdoc
