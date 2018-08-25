@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-composer require --prefer-dist "faryshta/yii2-disable-submit-buttons:*"
+composer require "faryshta/yii2-disable-submit-buttons:~2.0.0"
 ```
 
 or add
 
 ```
-"faryshta/yii2-disable-submit-buttons": "*"
+"faryshta/yii2-disable-submit-buttons": "~2.0.0"
 ```
 
 to the `require` section of your `composer.json` file.
