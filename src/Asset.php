@@ -1,17 +1,19 @@
 <?php
-namespace faryshta\assets;
+
+namespace faryshta\disableSubmitButtons;
 
 use yii\web\AssetBundle;
+use yii\web\JqueryAsset;
 
 /**
  * @author Angel (Guevara) López <angeldelcaos@gmail.com>
  */
-class ActiveFormDisableSubmitButtonsAsset extends AssetBundle
+class Asset extends AssetBundle
 {
     /**
      * @inheritdoc
      */
-    public $sourcePath = "@vendor/faryshta/yii2-disable-submit-buttons/js";
+    public $sourcePath = __DIR__ . '/js';
 
     /**
      * @inheritdoc
@@ -21,5 +23,5 @@ class ActiveFormDisableSubmitButtonsAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $depends = ['yii\\web\\JqueryAsset'];
+    public $depends = [JqueryAsset::class];
 }
